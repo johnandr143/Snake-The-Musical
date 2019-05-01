@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Test_Game"
         mc:Ignorable="d"
         
-        Title = "Ross' Game" Height="600" Width="800" WindowStyle="ThreeDBorderWindow">
+        Title = "Snake! The musical Beta" Height="600" Width="800" WindowStyle="ThreeDBorderWindow">
    
     <Window.Effect>
         <DropShadowEffect BlurRadius="10"/>

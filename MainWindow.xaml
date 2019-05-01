@@ -5,23 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test_Game"
         mc:Ignorable="d"
-        Title="Test Game" Height="600" Width="800" Background="Transparent">
+        Title="Test Game" Height="744" Width="1200" Background="Transparent">
 
     <Grid>
-        <Image Source="C:\Users\DellPc\Downloads\Space.jpg" Stretch="UniformToFill"></Image>
+        <Image Source="C:\Users\techg\OneDrive\Grade 13\compsci\code\snake\MainWindows_Background.jpg" Stretch="UniformToFill"></Image>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Label Name="lblTitle" FontSize="72" Foreground="White">Test Game!</Label>
+            <Label Name="lblTitle" FontSize="72" Foreground="White">Snake: The Musical</Label>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Name="btnNewGame" Click="btnNewGame_Click" Background="Transparent"                    
+            <Button Name="btnNewGame"    Click="btnNewGame_Click"  Foreground="White" Background="Transparent"                    
                     FontSize="25">New Game</Button>
-            <Button Name="btnScores" Click="btnScores_Click" Background ="Transparent"
+            <Button Name="btnScores" Click="btnScores_Click" Foreground="White"  Background ="Transparent"
                     FontSize="23">Open Scores</Button>
-            <Button Name="btnExit" Click="btnExit_Click" Background ="Transparent" 
+            <Button Name="btnExit" Click="btnExit_Click"  Foreground="White" Background ="Transparent" 
                     FontSize="25">Exit</Button>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Label Name="lblScores"></Label>
+        <StackPanel HorizontalAlignment="Right"  VerticalAlignment="Center">
+            <Label Foreground ="White" Name="lblScores"></Label>
         </StackPanel>
     </Grid>
 </Window>
