@@ -1,0 +1,27 @@
+﻿<Window x:Class="Test_Game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_Game"
+        mc:Ignorable="d"
+        Title="Test Game" Height="600" Width="800" Background="Transparent">
+
+    <Grid>
+        <Image Source="C:\Users\DellPc\Downloads\Space.jpg" Stretch="UniformToFill"></Image>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Label Name="lblTitle" FontSize="72" Foreground="White">Test Game!</Label>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="btnNewGame" Click="btnNewGame_Click" Background="Transparent"                    
+                    FontSize="25">New Game</Button>
+            <Button Name="btnScores" Click="btnScores_Click" Background ="Transparent"
+                    FontSize="23">Open Scores</Button>
+            <Button Name="btnExit" Click="btnExit_Click" Background ="Transparent" 
+                    FontSize="25">Exit</Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Name="lblScores"></Label>
+        </StackPanel>
+    </Grid>
+</Window>

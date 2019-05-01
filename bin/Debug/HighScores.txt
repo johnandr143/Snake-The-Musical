@@ -1,0 +1,6 @@
+User, Score
+Ross, 1000
+Dakota, 2000
+Andrew, 3000
+Mitch, 4000
+Vick, 5000
