@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("highscores.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gamemusiccrabrave.mp3")]
 
 

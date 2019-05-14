@@ -27,8 +27,17 @@ namespace Test_Game
     public partial class MainWindow : Window
     {
         MainGame mg;
+        public static bool close = false; 
         public MainWindow()
         {
+           /* if (close == true)
+            {MessageBox.Show("rrr");
+                mg = new MainGame(this);
+                mg.Hide();
+                this.Hide();
+                mg.Show();
+                
+            }*/
             bool check = false;
             string line = " ", scores = "HighScores: \n";
             StreamReader sr = new StreamReader("HighScores.txt");
@@ -42,14 +51,15 @@ namespace Test_Game
             if (this.IsVisible == true || check == true)
             {
                 check = true;
-                if (this.IsVisible != true) { this.Close(); mg = new MainGame(); mg.Close(); }
+              //  if (this.IsVisible != true) { this.Close(); mg = new MainGame(); mg.Close(); }
             }
         }
 
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
+            
             mg = new MainGame();
-            mg.setCreatingForm = this;
+          
             mg.Hide();
             this.Hide();
             mg.Show();
@@ -65,6 +75,11 @@ namespace Test_Game
             if (MessageBox.Show("Are you Sure?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 this.Close();
+                if (mg == null)
+                {
+                   // mg = new MainGame();
+                }
+
                 mg.Close();
             }
         }

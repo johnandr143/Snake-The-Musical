@@ -7,16 +7,24 @@
         mc:Ignorable="d"
         
         Title = "Snake! The musical Beta" Height="600" Width="800" WindowStyle="ThreeDBorderWindow">
-   
-    <Window.Effect>
-        <DropShadowEffect BlurRadius="10"/>
-    </Window.Effect>
-    <Canvas Name ="paintCanvas" Background="White" Grid.Column="1" HorizontalAlignment="Stretch">
 
-        <StackPanel>
-            <Button Name="btnPause" Click="btnPause_Click" Foreground="Black">Pause</Button>
-
+    <Canvas>
+        <Label Name="lbluseless" FontSize="12" Foreground="Gray" HorizontalAlignment="Right" Canvas.Left="640" Canvas.Top="10">Press Esc for Pause Menu</Label>
+        <Rectangle Name="yaboi" Width="480" Height="480" Canvas.Top="20" Canvas.Left="20" Fill="Black"></Rectangle>
+        <Canvas x:Name="canvas" Background="Black">
+ 
+        </Canvas>
+        <StackPanel x:Name="Score" Canvas.Top="50" Canvas.Left="500">
+            <Label x:Name="lblScore" Content=" " Width="300"></Label>
         </StackPanel>
+        <StackPanel x:Name="stkPause" Height="200" Width="185" Canvas.Top="220" Canvas.Left="550">
+            <Button x:Name="btnRestart" Click="BtnRestart_Click" Content="Restart" FontSize="25" Visibility="Hidden"></Button>
+            <Button x:Name="btnSettings" Click="BtnSettings_Click" Content="Setting" FontSize="25" Visibility="Hidden"></Button>
+            <Button x:Name="btnResume" Content="Resume" Click="BtnResume_Click" FontSize="25" Visibility="Hidden"></Button>
+            <Button x:Name="btnExit" Click="BtnExit_Click" Content="Exit" FontSize="25" Visibility="Hidden"></Button>
+        </StackPanel>
+        
     </Canvas>
+    
 </Window>
 
